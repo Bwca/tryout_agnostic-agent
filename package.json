@@ -1,0 +1,24 @@
+{
+  "name": "tryout_agnostic-agent",
+  "version": "1.0.0",
+  "description": "Learning how to build an agnostic agent",
+  "exports": "./src/index.js",
+  "bin": {
+    "agent": "bin/agent.js"
+  },
+  "scripts": {
+    "agent": "node bin/agent.js",
+    "test": "node --test",
+    "typecheck": "tsc",
+    "check": "tsc && node --test"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
