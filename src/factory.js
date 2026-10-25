@@ -5,7 +5,7 @@
  * This is the only module that knows the full list of providers.
  */
 
-import { MockAgent } from "./providers/index.js";
+import { MockAgent, OllamaAgent } from "./providers/index.js";
 
 /**
  * @typedef {import("./core/index.js").Agent} Agent
@@ -15,6 +15,7 @@ import { MockAgent } from "./providers/index.js";
 // To add a provider: write an Agent subclass in providers/ and register it here.
 export const PROVIDERS = {
   mock: MockAgent,
+  ollama: OllamaAgent,
 };
 
 /** @typedef {keyof typeof PROVIDERS} ProviderName */

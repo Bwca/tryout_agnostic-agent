@@ -21,7 +21,7 @@ export function getTime({ timezone }) {
       hourCycle: "h23",
     }).format(new Date());
   } catch {
-    throw new Error(`Unknown timezone '${timezone}'. Use a name like 'Europe/Kyiv'.`);
+    throw new Error(`Unknown timezone '${timezone}'. Use a name like 'Europe/Istanbul'.`);
   }
 }
 
@@ -34,7 +34,7 @@ export const getTimeTool = {
     properties: {
       timezone: {
         type: "string",
-        description: "IANA timezone name, e.g. 'America/Vancouver' or 'Europe/Kyiv'.",
+        description: "IANA timezone name, e.g. 'America/Vancouver' or 'Europe/Istanbul'.",
       },
     },
     required: ["timezone"],

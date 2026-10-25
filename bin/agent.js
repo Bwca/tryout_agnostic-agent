@@ -6,7 +6,7 @@
  *
  * Run:
  *   node bin/agent.js                                   (mock provider, offline)
- *   node bin/agent.js --provider ollama "What time is it in Kyiv?"
+ *   node bin/agent.js --provider ollama "What time is it in Istanbul?"
  *   node bin/agent.js --provider claude "Roll 3 dice."
  *   node bin/agent.js --provider openai --model <model-name> "Roll 3 dice."
  *   node bin/agent.js --provider ollama --chat
@@ -18,7 +18,7 @@ import { createAgent, isProviderName, PROVIDERS, TOOLS } from "../src/index.js";
 
 /** @typedef {import("../src/index.js").ToolCallListener} ToolCallListener */
 
-const DEFAULT_QUESTION = "What time is it in Kyiv and Vancouver? Then roll 3 dice.";
+const DEFAULT_QUESTION = "What time is it in Istanbul and Vancouver? Then roll 3 dice.";
 const SYSTEM_PROMPT = "You are a helpful assistant. Use the tools when they help answer.";
 
 /** @type {ToolCallListener} */
